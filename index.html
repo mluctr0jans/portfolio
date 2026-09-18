@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saibot Leggim Kasawgnosup | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f7f7f7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #111;
+      padding: 16px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    header {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: #181818;
+      color: white;
+    }
+
+    .hero {
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 8vw, 72px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #aaa;
+    }
+
+    .hero p {
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: white;
+      color: #111;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      background: #ddd;
+    }
+
+    section {
+      padding: 80px 8%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 750px;
+      color: #555;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .skill {
+      background: #222;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .project {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      transition: 0.2s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .project h3 {
+      margin-bottom: 12px;
+    }
+
+    .project p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .project a {
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111;
+      color: #aaa;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav ul {
+        gap: 14px;
+        font-size: 14px;
+      }
+
+      section {
+        padding: 60px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">Saibot.</div>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <header>
+    <div class="hero">
+      <p>Hello, I'm</p>
+
+      <h1>
+        Saibot Leggim
+        <span>Kasawgnosup</span>
+      </h1>
+
+      <p>
+        A passionate developer and technology enthusiast who enjoys
+        building useful, simple, and creative digital experiences.
+      </p>
+
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </header>
+
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+
+    <p>
+      I'm Saibot Leggim Kasawgnosup, a developer interested in technology,
+      software development, web design, and solving real-world problems.
+      I enjoy learning new tools and turning ideas into functional projects.
+    </p>
+
+    <div class="skills">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Web Development</span>
+      <span class="skill">UI/UX</span>
+      <span class="skill">Git</span>
+    </div>
+  </section>
+
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>
+          A responsive personal portfolio website created using HTML,
+          CSS, and JavaScript.
+        </p>
+        <a href="#">View Project →</a>
+      </div>
+
+      <div class="project">
+        <h3>Web Application</h3>
+        <p>
+          A simple web application designed to solve a real-world
+          problem with a clean interface.
+        </p>
+        <a href="#">View Project →</a>
+      </div>
+
+      <div class="project">
+        <h3>Personal Project</h3>
+        <p>
+          An experimental project created while learning new
+          technologies and development techniques.
+        </p>
+        <a href="#">View Project →</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact">
+    <h2>Get In Touch</h2>
+
+    <p>
+      Interested in working together or just want to say hello?
+    </p>
+
+    <a
+      href="mailto:saibot@example.com"
+      class="btn"
+    >
+      Contact Me
+    </a>
+  </section>
+
+
+  <footer>
+    <p>
+      © <span id="year"></span> Saibot Leggim Kasawgnosup.
+      All rights reserved.
+    </p>
+  </footer>
+
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    const links = document.querySelectorAll("nav a");
+
+    links.forEach(link => {
+      link.addEventListener("click", function () {
+        console.log("Navigating to:", this.getAttribute("href"));
+      });
+    });
+  </script>
+
+</body>
+</html>
